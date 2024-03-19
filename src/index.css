@@ -1,0 +1,28 @@
+:root {
+  --dark-color: #111;
+  --light-color: #eee;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+
+  body {
+    background-color: var(--dark-color, black);
+    color: var(--light-color, white);
+  }
+
+}
+
+
+@media screen and (prefers-color-scheme: light) {
+
+  body {
+    background-color: var(--light-color, white);
+    color: var(--dark-color, black);
+  }
+
+}
